@@ -61,4 +61,4 @@ class RuleParser:
         if line_expr not in EXPRESSIONS:
             raise ParseException("Invalid expression")  # TODO: Add line number info
 
-        return EXPRESSIONS[line_expr] + " ".join(line_data[1:])
+        return EXPRESSIONS[line_expr] + " " + " ".join(line_data[1:])
