@@ -4,11 +4,19 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-argh==0.26.2              # via watchdog
+argh==0.26.2
+    # via watchdog
 croniter==0.3.30
-pathtools==0.1.2          # via watchdog
-python-dateutil==2.8.0    # via croniter
+    # via -r requirements.in
+pathtools==0.1.2
+    # via watchdog
+python-dateutil==2.8.0
+    # via croniter
 pytz==2019.2
-pyyaml==5.1.2             # via watchdog
-six==1.12.0               # via python-dateutil
+    # via -r requirements.in
+pyyaml==5.4
+    # via watchdog
+six==1.12.0
+    # via python-dateutil
 watchdog==0.9.0
+    # via -r requirements.in
